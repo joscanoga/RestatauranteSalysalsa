@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 /*-------------------------------------cabecera--------------------------------*/
 header{
     background-color: #8F0D09;
@@ -9,6 +13,7 @@ header{
     top: 0;
     width: 100%;
     min-height: 10%;
+    z-index: 1;
 }
 header a{
     color: aliceblue;
@@ -45,9 +50,7 @@ header a{
     font-size: 1.5em;
     font-family: fantasy;
 }
-.centro{
-    padding-top: 5rem;
-}
+
 .logo-nav-container{
     display: flex;
     justify-content: space-between;
@@ -109,11 +112,12 @@ html{
     max-width: 1250px;
     text-align: center;
     margin: 0 auto;
-}
+}   
 
 .centro{
-    min-height: 65%;
-    padding-top: 10rem;
+    min-height: 85%;
+    padding-top: 5%;
+    
 }
 footer {
     width: 100%;
