@@ -1,0 +1,176 @@
+/*----------------slider--------------------*/
+.centrado img{
+    width: 10%;
+    height: 10%;
+}
+.container_slider{
+    width: 100%;
+    
+    
+}
+.container_slider img{
+    width: auto;
+    height: 650px;
+}
+.logo_centrado{
+    width: 65px;
+    
+    
+}
+
+
+
+/*------------------presentacion----------------*/
+.presntacion{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    
+    
+}
+.presntacion img{
+    width: 100%;
+    height: 500px;
+}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centrado h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+
+/*------------------destacados----------------*/
+.destacados{
+    background-color: rgb(255,255,255);
+    width: 100%;
+    height: 500px;
+    
+}
+.titulo{
+    padding-left: 2rem;
+    margin: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left ;
+}
+
+.contenido{
+    display: flex;
+    height: 75%;
+    
+
+}
+.recomendados{
+    
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.item{
+    margin: 3%;
+    width: 40%;
+    height: 40%;
+    
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+}
+.menu{
+    
+    width: 50%;
+    height: 100%;
+}
+.imagen{
+    width: 60%;
+    height: 80%;
+    
+    margin: 5% auto;
+}
+.imagen img{
+    width: 100%;
+    
+    height: 100%;
+}
+.botom{
+    margin: 5% auto;
+    width: 40%;
+    text-align: center;
+    background-color: chocolate;
+    border: #000 1px;
+    
+    
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+/*------------------servicios----------------*/
+.servicios{
+    background-color: yellow;
+    width: 100%;
+    height: 500px;
+    color: #000;
+    position: relative;
+}
+.servicios img{
+    width: 100%;
+    height: 500px;
+}
+
+ .serv_centrado{
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 95%;
+    height: 95%;
+    
+ }
+ .serv_item{
+    
+     width: 20%;
+     
+     margin: 2%;
+     height: 90%;
+ }
+ .serv_imagen{
+     width: 80%;
+     
+     margin-top: 10%;
+     height: 25%;
+ }
+ .serv_imagen img{
+     width: auto;
+     max-height: 100%;
+
+ }
+ .serv_texto{
+
+    color: azure;
+ }
+
+
+
+
+/*------------------testimonios----------------*/
+/*.testimonios{
+    
+    width: 100%;
+    height: 200px;
+}*/

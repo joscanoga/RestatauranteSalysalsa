@@ -1,0 +1,81 @@
+.nuestra-historia {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagen-historia {
+    padding-bottom: 2rem;
+}
+
+.imagen-historia img {
+    width: 80%;
+    background-size: cover;
+    height: auto;
+    border-radius: 36px;
+    box-shadow:  17px 17px 34px #999999,
+                -17px -17px 34px #c7c7c7;
+    max-width: 100%;
+}
+
+.texto-historia {
+    width: 50%;
+}
+
+.texto-historia p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.texto-historia h1 {
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 106, 0);
+}
+
+.texto-historia h1 span {
+    font-size: 3rem;
+    color: rgb(134, 7, 7);
+}
+
+.trabajadores {
+    width: 100%;
+    background-image: linear-gradient(to right top, #ffb7b7, #ffafaf, #ffa8a8, #ffa0a0, #ff9898, #ff9191, #ff8b8a, #ff8483, #ff7c7b, #ff7473, #ff6b6a, #ff6262);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+.trabajador {
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.trabajador img {
+    border-radius: 50%;
+    box-shadow:  6px 6px 12px #ffa2a2,
+                -6px -6px 12px #fc5d5d; 
+    height: 15rem;
+    width: 15rem;
+    margin-bottom: 1rem;    
+}
+
+.trabajador h3, h6 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+.trabajador h3 {
+    font-weight: bold;
+}
+
+.trabajador h6 {
+    font-size: 1.5rem;
+    text-emphasis: '~';
+    -webkit-text-emphasis: '~';
+}
