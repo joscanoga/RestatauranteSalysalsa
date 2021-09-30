@@ -40,3 +40,11 @@
 .icon-youtube:before {
   content: "\ea9d";
 }
+
+.plus::before{
+  content: ea0a;
+}
+
+.minus::before{
+  content: ea0b;
+}
