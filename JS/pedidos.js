@@ -1,17 +1,21 @@
-var valueFirstDish = 0;
-var valueSecondDish, valueThirdDish, valueFourthDish, valueFifthdish = 0;
-
+$("input[id*='counter']").each(function(i){
+    this.value = 0;
+})
 
 $(document).ready(function(){
     $('#plusFirstDish').click(function(){
-        valueFirstDish++;
-        alert($("#counterFirstDish").text(valueFirstDish)) ;
+        document.getElementById("counterFirstDish").value++;
     });
 
     $('#minusFirstDish').click(function(){
-        valueFirstDish--;
-        alert("El valor es "+valueFirstDish);
+        if(document.getElementById("counterFirstDish").value >= 1){
+            document.getElementById("counterFirstDish").value--;
+        }    
     });
+});
 
-
+$(document).ready(function(){
+    $("img[id*='plus']").click(function(i){
+        console.log($(this).siblings()("input").attr('id'));
+    })
 });
