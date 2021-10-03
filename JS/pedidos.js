@@ -2,20 +2,26 @@ $("input[id*='counter']").each(function(i){
     this.value = 0;
 })
 
-$(document).ready(function(){
-    $('#plusFirstDish').click(function(){
-        document.getElementById("counterFirstDish").value++;
-    });
-
-    $('#minusFirstDish').click(function(){
-        if(document.getElementById("counterFirstDish").value >= 1){
-            document.getElementById("counterFirstDish").value--;
-        }    
-    });
-});
 
 $(document).ready(function(){
     $("img[id*='plus']").click(function(i){
-        console.log($(this).siblings()("input").attr('id'));
+        let currentButton = this;
+        $("input[id*='counter']").each(function(i){
+            if (this.parentNode.parentNode === currentButton.parentNode.parentNode){
+                this.value++;
+                console.log("got");
+            }
+        })
+    })
+
+    $("img[id*='minus']").click(function(i){
+        let currentButton = this;
+        $("input[id*='counter']").each(function(i){
+            if (this.parentNode.parentNode === currentButton.parentNode.parentNode){
+                if (this.value >= 1){
+                    this.value--;
+                }
+            }
+        })
     })
 });
