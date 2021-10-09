@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/font.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="contenedor logo-nav-container">
+            <a href="index.html" class="logo">sal&salsa</a>
+            <span class="ver_menu">ver menu</span>
+            <nav class="navegador">
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="menu.html">El menu</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contenedor centro">
+        <h1 align="center" style="margin-top: 3%;">Realiza tu Reserva!!!</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Nombres</label>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Primer Nombre" required>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Segundo Nombre">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Apellidos</label>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Primer Apellido" required>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Segundo Apellido">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputEmail4">Teléfono</label>
+                    <input type="number" class="form-control" id="inputEmail4" placeholder="Teléfono">
+                </div>
+                <div class="form-group col-md-4">
+                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Servicio a Reservar</label>
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>Selecciona un Servicio...</option>
+                        <option value="1">Celebración de Cumpleaños</option>
+                        <option value="2">Aniversario</option>
+                        <option value="3">Fiestas Infantiles</option>
+                        <option value="4">Declaraciones o Propuestas</option>
+                        <option value="5">Despedidas</option>
+                        <option value="6">Cena con Amigos</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputEmail4">Número de Personas</label>
+                    <input type="number" class="form-control" id="inputEmail4" placeholder="Número de Personas">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">Fecha y Hora</label><br>
+                    <input type="datetime-local" name="fechaHora">
+                </div>
+                <div class="form-group col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Acepto términos y condiciones</label>
+                    </div><br>
+                    <button type="submit" class="btn btn-primary">Reserva!!!</button>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="contenedor">
+            <div class="item_footer" id=imagen>
+            <img src="../IMAGENES/logo.png" alt="logo"  >
+            <!---<div class="img"></div>-->
+            </div>        
+            <div class="item_footer" id="informacion">
+                <div>
+                    <div class="navegador_inf">
+                        <ul>
+                            <li><a href="mapa.html">mapa del sitio</a></li>
+                            <li><a href="#">contactenos</a></li>
+                            <li><a href="reservas.html">reservas</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>
+                            Restaurante Sal y  Salsa ltda.</br>
+                            direccion: </br>
+                            Correo: <br>
+                            Telefono:
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item_footer" id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.9375883895!2d-75.581929!3d6.166312!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa36cff0cbbf71786!2sParque%20Principal%20Envigado%20Marceliano%20V%C3%A9lez%20Barreneche.!5e0!3m2!1ses!2sco!4v1631394128776!5m2!1ses!2sco" frameborder="0"></iframe> </div>
+                    
+           
+        </div>
+    </footer>
+    
+</body>
+</html>
