@@ -87,8 +87,8 @@ function CarritoTotal(){
         }
         sendMail(campos);
         Swal.fire('Saved!', '', 'success')
-        //localStorage.removeItem("carito");
-        //location.reload();
+        localStorage.removeItem("carito");
+        location.reload();
       }
     })
 });
