@@ -48,3 +48,43 @@ function CarritoTotal(){
     addLocalStorage()
   }
   CarritoTotal()
+  
+  let compraDatos = document.getElementById("compraDatos"); 
+  compraDatos.addEventListener("submit", function(event){
+    event.preventDefault();
+    console.log("entre");
+    Swal.fire({
+      title: 'Desea finalizar el pedido?',
+      showDenyButton: false,
+      showCancelButton: true,
+      confirmButtonText: 'Save',
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+      if (result.isConfirmed) {
+        let nombres_items=[];
+        let cantidad_items=[];
+        let precio_items = []; 
+        carito.forEach((item) => {
+          nombres_items.push(item.title);
+          cantidad_items.push(item.cantidad);
+          precio_items.push(item.price);
+        })
+        let texto_productos;
+        for(let i=0; i<nombres_items.length; i++)
+        {
+          texto_productos +="\n\nNombre del producto: "+nombres_items[i]+", Cantidad: "+cantidad_items[i]+", Precio: "+precio_items[i]+"\n\n";
+        }
+        console.log(texto_productos);
+        const campos = {
+          nombre: document.getElementById("nombre_carrito").value,
+          cc: document.getElementById("correo_carrito").value,
+          total_carrito: document.getElementById("total").textContent,
+          message1: texto_productos,
+        }
+        sendMail(campos);
+        Swal.fire('Saved!', '', 'success')
+        //localStorage.removeItem("carito");
+        //location.reload();
+      }
+    })
+});
