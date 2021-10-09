@@ -8,17 +8,11 @@
     <title>Reservas</title>
     <link rel="stylesheet" href="../CSS/estilos.css">
     <link rel="stylesheet" href="../CSS/font.css">
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="../JS/enviar_email.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-    (function() {
-    emailjs.init("user_WuQPc5Oqw7VC55jrpk8Wq");
-    })();
-    </script>
 </head>
 <body>
     <header>
@@ -38,7 +32,7 @@
 
     <div class="contenedor centro">
         <h1  style="margin-top: 100px; text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: brown; margin-bottom: 30px;">Realiza tu Reserva</h1>
-        <form>
+        <form id="reservas">
             <div class="form-row" style="display: flex; flex-direction: column; align-items: center;">
                 <div class="form-group col-md-6">
                     <label for="inputEmail4" style="color: maroon; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 1.5rem;">Nombres</label>
@@ -95,7 +89,7 @@
                         <input class="form-check-input" type="checkbox" id="gridCheck">
                         <label class="form-check-label" for="gridCheck">Acepto términos y condiciones</label>
                     </div><br>
-                    <button onclick= 'sendMail()' type="submit" class="btn btn-primary">Finalizar</button>
+                    <button id="submit-reservas" type="submit" class="btn btn-primary">Finalizar</button>
                 </div>
                 
             </div>
@@ -134,5 +128,7 @@
         </div>
     </footer>
     
+    <script type="text/javascript" src="../JS/enviar_email_reservas.js"></script>
+    <script type="text/javascript" src="../JS/reserva.js"></script>
 </body>
 </html>
